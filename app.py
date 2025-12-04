@@ -186,9 +186,9 @@ def generate_answer_with_hf(question, context_chunks):
 # ---------------- STREAMLIT UI ----------------
 
 def main():
-    st.title("📚 Mini RAG Assistant — PDF Upload (Gemini Enabled)")
+    st.title("Mini RAG Assistant — PDF Upload")
 
-    st.sidebar.header("⚙️ Settings")
+    st.sidebar.header("Settings")
     uploaded_files = st.sidebar.file_uploader(
         "Upload PDF files", type=['pdf'], accept_multiple_files=True
     )
