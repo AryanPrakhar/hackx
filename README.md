@@ -20,10 +20,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-2. (Optional) Set OpenAI API key if you want to use OpenAI for generation:
+2. (Optional) Set Gemini API key if you want to use OpenAI for generation:
 
 ```bash
-export OPENAI_API_KEY="sk-..."
+export GEMINI_API_KEY="......"
 ```
 
 3. Run the Streamlit app:
