@@ -19,7 +19,7 @@ from transformers import pipeline
 st.set_page_config(page_title="Mini RAG Assistant", layout="wide")
 
 # Add your Gemini API key here
-os.environ["GEMINI_API_KEY"] = "AIzaSyB6IULfvJl7UWREOxp340yd8ymdYei8WHs"
+os.environ["GEMINI_API_KEY"] = "Enter your api key"
 
 
 def load_pdf_from_upload(uploaded_file):
