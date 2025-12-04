@@ -21,7 +21,7 @@ st.set_page_config(page_title="Mini RAG Assistant", layout="wide")
 # Add your Gemini API key here
 os.environ["GEMINI_API_KEY"] = "Enter your api key"
 
-
+#function to load pdf
 def load_pdf_from_upload(uploaded_file):
     docs = []
     
