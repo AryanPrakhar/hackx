@@ -1,6 +1,6 @@
-# Mini RAG Assistant (Streamlit)
+# Mini RAG Assistant
 
-This is a minimal, naive Retrieval-Augmented Generation (RAG) assistant built with Streamlit. It loads a small local document corpus, embeds chunks using a Sentence-Transformers model, stores embeddings in a FAISS index, and answers user questions by retrieving relevant chunks and passing them to a language model.
+This is a Retrieval-Augmented Generation assistant built with Streamlit. It loads a small local document corpus, embeds chunks using a Sentence-Transformers model, stores embeddings in a FAISS index, and answers user questions by retrieving relevant chunks and passing them to a language model.
 
 Features
 - Uses `sentence-transformers` for embeddings (`all-MiniLM-L6-v2`).
@@ -37,10 +37,6 @@ Usage notes
 - Use the `(Re)build index` button in the sidebar to force rebuilding embeddings.
 - If OpenAI key is not set, the app uses `flan-t5-small` from HuggingFace as a fallback (it will be downloaded automatically on first run and may take time).
 
-Limitations & learnings
-- This is intentionally naive: chunking is character-based and not token-aware. For production, use smarter chunking and handle token limits.
-- The fallback HF model is small and may produce lower-quality answers than larger hosted models.
-- FAISS index is in-memory; production should persist index and metadata.
 
 Next steps (suggested)
 - Add unit tests for chunking & retrieval.
